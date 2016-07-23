@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <title>Calorie Counter</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta charset='utf-8'>
+    <script src='/calcount.js'></script>
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      h1 {
+        margin: 0 auto;
+        padding: 0.2rem 0.5rem;
+        color: #fff;
+        background-color: #026;
+        font-size: 1rem;
+        font-weight: normal;
+      }
+      #count {
+        text-align: center;
+        font-size: 6rem;
+        font-weight: bold;
+        margin: 3rem auto;
+      }
+      .controls {
+        margin: 1rem auto;
+        text-align: center;
+        font-size: 2rem;
+      }
+      .controls a {
+        text-decoration: none;
+        padding: 0.3rem 0;
+        border-radius: 0.5rem;
+        margin: 0;
+        width: 25%;
+        display: inline-block;
+      }
+      .controls a.plus {
+        border: 1px solid #090;
+        color: #090;
+        background-color: #cfc;
+      }
+      .controls a.minus {
+        border: 1px solid #900;
+        color: #900;
+        background-color: #fcc;
+      }
+      .controls a.plus:active {
+        color: #fff;
+        background-color: #090;
+      }
+      .controls a.minus:active {
+        color: #fff;
+        background-color: #900;
+      }
+      .controls a.new {
+        display: block;
+        border: 1px solid #009;
+        color: #009;
+        background-color: #ccf;
+        margin: 0.5rem auto;
+        width: 80%;
+      }
+      .controls a.new:active {
+        color: #fff;
+        background-color: #009;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='container'>
+      <h1>Calorie Counter</h1>
+      <div id='count'></div>
+      <div class='controls'>
+        <a href='#' class='plus' id='plus-10'>+10</a>
+        <a href='#' class='plus' id='plus-100'>+100</a>
+        <a href='#' class='plus' id='plus-500'>+500</a>
+      </div>
+      <div class='controls'>
+        <a href='#' class='minus' id='minus-10'>-10</a>
+        <a href='#' class='minus' id='minus-100'>-100</a>
+        <a href='#' class='minus' id='minus-500'>-500</a>
+      </div>
+      <div class='controls'>
+        <a href='#' class='new' id='newday'>New Day</a>
+      </div>
+    </div>
+  </body>
+</html>
